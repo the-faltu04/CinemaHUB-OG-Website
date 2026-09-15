@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#04050a"><meta name="color-scheme" content="dark"><meta name="description" content="{{ site_name }} — live cinema catalogue"><link rel="icon" href="/static/favicon.svg"><link rel="stylesheet" href="/static/site.css"><title>{{ site_name }} — The Cinema</title></head>
+<body class="cinema-page">
+<div class="noise" aria-hidden="true"></div><header class="site-nav compact"><a class="brand" href="/"><span class="brand-mark">CH</span><span><b>{{ site_name }}</b><small>THE CINEMA UNIVERSE</small></span></a><div class="nav-actions"><a href="/">HOME</a><button id="focusSearch" aria-label="Focus search">⌕</button></div></header>
+<main class="catalog-main">
+<section class="catalog-heading"><div class="section-kicker">THE CINEMA / LIVE CATALOGUE</div><h1>Find your<br><em>next story.</em></h1><p>Real indexed titles. Real artwork where available. One clean discovery surface, then a direct Telegram handoff for verification and delivery.</p></section>
+<section class="search-console">
+  <div class="search-bar" id="searchBar"><span class="search-icon">⌕</span><input id="search" placeholder="Search movies, series, anime…" autocomplete="off" inputmode="search" aria-label="Search cinema catalogue"><kbd>CTRL K</kbd><button id="resetFilters" title="Reset filters" aria-label="Reset filters">↺</button><span class="scan-line" aria-hidden="true"></span></div>
+  <div id="suggestions" class="search-suggestions" hidden></div>
+  <div class="filter-group"><div class="filter-title">CATEGORY</div><div id="categories" class="chips"></div><div class="filter-title year">YEAR</div><div id="years" class="chips"></div></div>
+</section>
+<section class="catalog-results"><div class="catalog-result-head"><div><span class="micro" id="resultMicro">SELECTED FROM THE INDEX</span><h2 id="sectionTitle">FEATURED TITLES</h2></div><span id="resultCount">— TITLES</span></div><div id="grid" class="poster-grid"></div></section>
+</main>
+<footer class="site-footer"><span>© {{ site_name }}</span><a href="https://www.tvmaze.com/api" target="_blank" rel="noopener">TV data: TVmaze ↗</a><span>Direct Telegram handoff</span></footer>
+<script defer src="/static/cinema.js"></script></body></html>
